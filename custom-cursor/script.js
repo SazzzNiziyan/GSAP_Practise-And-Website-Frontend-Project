@@ -48,7 +48,6 @@ window.onYouTubeIframeAPIReady = function () {
         },
         events: {
             onReady: function () {
-                console.log("PLAYER READY");
                 playerReady = true;
             }
         }
