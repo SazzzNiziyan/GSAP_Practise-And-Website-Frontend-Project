@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Azonix;
+  background-color: #333;
+  color: #fb1313;
+  overflow-x: hidden;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  padding: 20vw 0;
+}
+
+.marquee {
+  background-color: #e2fb4a;
+  display: flex;
+  width: 100vw;
+  padding: 1.2vw 0;
+}
+
+.elem {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.32rem;
+  gap: 1.3vw;
+  padding: 0 0.3vw;
+  width: 25vw;
+  transform: translateX(-100%);
+}
+
+img {
+  width: 3.4vw;
+  object-fit: cover;
+  border: 3px solid #333;
+  padding: 0.5vw;
+  border-radius: 50%;
+}
