@@ -15,6 +15,7 @@ body {
 
 .page1 {
   height: 100vh;
+  padding-top: 2rem;
   width: 100vw;
 }
 
@@ -25,7 +26,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 7rem;
-  margin-top: 2rem;
 }
 .nav .logo {
   width: 25%;
@@ -48,7 +48,7 @@ body {
   border-radius: 20rem;
   border: none;
   font-size: large;
-  padding: 2rem;
+  padding: 0 1.5rem;
 }
 .nav input:focus {
   outline: none;
@@ -62,21 +62,37 @@ body {
 }
 
 .main {
-  height: 60%;
-  padding: 2rem 0;
+  height: 70%;
+  padding: 2rem 2rem;
   display: flex;
   gap: 3rem;
-  justify-content: center;
+  overflow: hidden;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 .main .rosette {
   flex-shrink: 0;
   width: 20%;
-  bottom: 0%;
-  left: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
   border-radius: 2rem;
   background: linear-gradient(to top right, #450a0a, #991b1b, #f87171);
 }
 .main .rosette img {
   height: 20rem;
+  align-self: center;
+}
+.main .rosette h3 {
+  font-size: 2.4rem;
+  color: #d0d0d0;
+}
+.main .rosette p {
+  color: #d0d0d0;
+}
+.main .rosette p span {
+  color: #d0d0d0;
+  display: inline-block;
+  font-weight: 800;
+  padding-top: 10px;
 }/*# sourceMappingURL=main.css.map */
