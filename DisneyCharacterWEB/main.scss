@@ -63,10 +63,10 @@ body {
 
 .main {
   height: 70%;
-  padding: 2rem 2rem;
+  padding-left: 2rem; 
   display: flex;
   gap: 3rem;
-  overflow: hidden;
+  overflow-x: hidden;
   justify-content: flex-start;
   align-items: flex-end;
   .rosette {
@@ -79,6 +79,7 @@ body {
     background: linear-gradient(to top right, #450a0a, #991b1b, #f87171);
     img {
       height: 20rem;
+       transform-origin: bottom center;
       align-self: center;
     }
     h3 {
@@ -93,6 +94,15 @@ body {
         font-weight: 800;
         padding-top: 10px;
       }
+    }
+  }
+  .item-1{
+    background: linear-gradient(to top right, #187667, #8cd0ce  , #e6eff1);
+  }
+  .item-2{
+    background: linear-gradient(to top right, #205b8f, #68e3f3, #8fbadc);
+    img{
+      height: 18rem;
     }
   }
 }
