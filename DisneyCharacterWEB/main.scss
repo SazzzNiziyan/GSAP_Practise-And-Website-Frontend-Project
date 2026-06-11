@@ -54,10 +54,15 @@ body {
     border: none;
   }
   p {
-    font-size: larger;
-    font-weight: 600;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
     width: 25%;
     text-align: right;
+
+    img{
+      height: 1.4rem;
+    }
   }
 }
 
@@ -79,7 +84,7 @@ body {
     background: linear-gradient(to top right, #450a0a, #991b1b, #f87171);
     img {
       height: 20rem;
-       transform-origin: bottom center;
+      transform-origin: bottom center;
       align-self: center;
     }
     h3 {
@@ -102,7 +107,22 @@ body {
   .item-2{
     background: linear-gradient(to top right, #205b8f, #68e3f3, #8fbadc);
     img{
-      height: 18rem;
+      height: 20rem;
+      width: 18.3rem;
     }
+  }
+}
+
+footer{
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  section{
+    display: flex;
+    gap: 2rem;
+    h1{
+      color: rgb(194, 194, 194);
+    }
+    
   }
 }

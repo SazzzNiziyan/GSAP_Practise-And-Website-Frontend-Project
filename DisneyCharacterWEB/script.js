@@ -1,9 +1,11 @@
 
 let sections = gsap.utils.toArray(".rosette")
+const scrollAmount =
+  document.querySelector(".main").scrollWidth - window.innerWidth;
+
 
 gsap.to(sections, {
-    x: -(document.querySelector(".main").scrollWidth - window.innerWidth),
-    xPercent: -100 * (sections.length - 1),
+   x: -scrollAmount,
     scrollTrigger: {
         trigger: ".page1",
         start: "top top",
@@ -11,7 +13,7 @@ gsap.to(sections, {
         anticipatePin: 1,
         scrub: 1,
         snap: 1 / (sections.length - 1),
-        end: () => "+=" + document.querySelector(".main").scrollWidth
+        end: () => "+=" + scrollAmount
     }, // start animation when ".box" enters the viewport
 });
 
@@ -48,9 +50,3 @@ function updateCards() {
 }
 
 gsap.ticker.add(updateCards);
-
-gsap.to(card, {
-    scale: scale,
-    opacity: scale / 1.3,
-    duration: 0.2
-});

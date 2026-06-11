@@ -55,10 +55,14 @@ body {
   border: none;
 }
 .nav p {
-  font-size: larger;
-  font-weight: 600;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
   width: 25%;
   text-align: right;
+}
+.nav p img {
+  height: 1.4rem;
 }
 
 .main {
@@ -104,5 +108,19 @@ body {
   background: linear-gradient(to top right, #205b8f, #68e3f3, #8fbadc);
 }
 .main .item-2 img {
-  height: 18rem;
+  height: 20rem;
+  width: 18.3rem;
+}
+
+footer {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer section {
+  display: flex;
+  gap: 2rem;
+}
+footer section h1 {
+  color: rgb(194, 194, 194);
 }/*# sourceMappingURL=main.css.map */
