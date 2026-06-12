@@ -12,7 +12,6 @@ gsap.to(sections, {
         pin: true,
         anticipatePin: 1,
         scrub: 1,
-        snap: 1 / (sections.length - 1),
         end: () => "+=" + scrollAmount
     }, // start animation when ".box" enters the viewport
 });
